@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: black;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Add padding to containers */
+.container {
+  padding: 16px;
+  background-color: white;
+}
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Overwrite default styles of hr */
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+
+/* Set a style for the submit button */
+.registerbtn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 16px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+.registerbtn:hover {
+  opacity: 1;
+}
+
+/* Add a blue text color to links */
+a {
+  color: dodgerblue;
+}
+
+/* Set a grey background color and center the text of the "sign in" section */
+.signin {
+  background-color: #f1f1f1;
+  text-align: center;
+}
+</style>
+</head>
+<body>
+
+<form action="/action_page.html" method="POST">
+  <div class="container">
+    
+    <p>Please fill in this form.</p>
+    <hr>
+
+    <b>Name</b>
+    <input type="text" placeholder="Name" name="name" required>
+    <b>Last Name</b>
+    <input type="text" placeholder="LastName" name="Lname" required>
+    <b>Gender</b>
+    <br>
+    <input type="radio" name="gender" value="male" checked> Male<br>
+    <input type="radio" name="gender" value="female"> Female<br>
+    <br>
+    <b>Date of Birth</b>
+    <br>
+    <input type="date" name="dob"><br>
+    <br>
+    <b>Country of birth</b>
+    <input type="text" name="cbirth" placeholder="country of birth">
+    <br>
+    <br>
+    <b>City of birth</b>
+    <input type="text" name="cibirth" placeholder="city of birth">
+    <br>
+    <br>
+    <b>Email</b>
+    <input type="email" name="email" >
+    <br>
+    <br>
+    <b>Phone number</b>
+    <input type="number" name="number" >
+    <br>
+    <br>
+    <b>Hand</b>
+    <br>
+    <input type="radio" name="Hand" value="right" checked>Right<br>
+    <input type="radio" name="Hand" value="Left"> Left<br>
+    <br>
+    <b>I am Suffering from </b><br>
+    <input type="radio" name="suffer" value="psychic" checked> psychic problem<br>
+    <input type="radio" name="suffer" value="physical"> physical problem<br>
+    <input type="radio" name="suffer" value="no"> No problem<br>
+   <br>
+   <br>
+   <b>I am Habit to </b><br>
+    <input type="radio" name="Habit" checked> Yoga Asanas<br>
+    <input type="radio" name="Habit"> Meditation<br>
+    <input type="radio" name="Habit">smoking<br>
+    <input type="radio" name="Habit">drinking<br>
+    <input type="radio" name="Habit">extasis<br>
+    <input type="radio" name="Habit">nothing<br>
+   <br>
+   <br>
+   <b>State of awarness </b><br>
+   <input type="radio" name="state" checked> Awake<br>
+   <input type="radio" name="state"> Dream<br>
+   <input type="radio" name="state">Meditation<br>
+   <input type="radio" name="state">Half awarness<br>
+     <br>
+  <br>
+  <b>Everybody can see your report </b><br>
+   <input type="radio" name="yes" checked> yes<br>
+   <input type="radio" name="no">no<br>
+   <br>
+    <button type="submit" class="registerbtn">Submit</button>
+  </div>
+  
+  
+</form>
+
+</body>
+</html>
